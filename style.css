@@ -129,8 +129,36 @@ body {
 }
 
 .pfp {
-  width: 100%; /* Adjust as necessary */
+  width: 96px; /* Adjust as necessary */
   height: auto; /* Adjust as necessary */
+}
+
+.bg {
+  width: 395px;
+  height: 390px;
+  object-fit: cover;
+  position: absolute;
+  top: 105px;       /* Aligns to top of the container */
+  left: 5px;      /* Aligns to left of the container */
+  z-index: 0;  /* Places image behind other content */
+}
+
+.bg1 {
+  width: 1255px;
+  height: 640px;
+  position: relative;
+  top: -531px;
+  margin-left: -845px;
+  overflow: hidden; /* Hides any part of the image that overflows */
+  z-index: -1;
+}
+
+.crop {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fills the container */
+  object-position: 50% -50px; /* Adjust the focus of the image */
 }
 
 .overlay {
@@ -153,18 +181,21 @@ body {
   display: flex;
   gap: -20px; 
   margin-left: 6px;
+  margin-top: 10px;
 }
 
 .box-container3 {
   display: flex;
   gap: -20px; 
-  margin-top: 3px;
+  margin-top: -5px;
   margin-left: 6px;
 }
 
 .box-container2 {
   display: flex;
-  margin-left: 2px;
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-bottom: 10px;
 }
 
 .box1 {
@@ -176,9 +207,15 @@ body {
 
 .box2 {
   text-align: center;
+  z-index: 2;
   word-wrap: break-word;
   overflow: hidden; 
-  margin: -1px -4px -3px -4px;
+  margin: -10px -2px -3px -6px;
+}
+
+.p1 {
+  width: 96px;
+  height: 130px;
 }
 
 .yolo {
@@ -188,11 +225,8 @@ body {
 }
 
 .uno {
-  background-color: #0a1a21;
-  border-top: solid 4px #0a1a21;
-  border-bottom: solid 85px #0a1a21;
   width: 403px;
-  height: 484px;
+  height: 474px;
   z-index: 3;
 }
 
@@ -231,6 +265,7 @@ body {
 
 p {
   word-wrap: break-word; 
+  text-align: center;
 }
 
 .toggle-button {
@@ -349,6 +384,6 @@ iframe {
 
 .iframe-container1 {
   width: 5000px;
-  height: 0px;
+  height: 300px;
   z-index: 3;
 }
